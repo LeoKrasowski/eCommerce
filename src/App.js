@@ -11,75 +11,68 @@ class App extends React.Component {
         {
           id: 1,
           title: 'Chair gray',
-          img: '',
-          desc: 'Some text about gray chair.',
+          img: 'Chair_Gray.jpg',
+          desc: 'A comfortable and stylish gray chair.',
           category: 'chairs',
           price: '49.99'
         },
         {
           id: 2,
-          title: 'Chair green',
-          img: '',
-          desc: 'Some text about green chair.',
+          title: 'Wall art',
+          img: 'Wall_Art.jpg',
+          desc: 'Nice wall art.',
           category: 'chairs',
-          price: '45.99'
+          price: '25.99'
         },
         {
           "id": 3,
-          "title": "Table Wooden",
-          "img": "",
+          "title": "Wooden dining table",
+          "img": "Wooden_Dining_Table.jpg",
           "desc": "A sturdy wooden table perfect for dining.",
           "category": "tables",
           "price": "89.99"
         },
         {
           "id": 4,
-          "title": "Sofa Blue",
-          "img": "",
+          "title": "Leather sofa",
+          "img": "Leather_Sofa.jpg",
           "desc": "A plush blue sofa that seats three.",
           "category": "sofas",
           "price": "299.99"
         },
         {
           "id": 5,
-          "title": "Lamp Modern",
-          "img": "",
+          "title": "Modern desk lamp",
+          "img": "Modern_Desk_Lamp.jpg",
           "desc": "A sleek modern lamp for your desk.",
           "category": "lamps",
-          "price": "29.99"
+          "price": "79.99"
         },
         {
           "id": 6,
-          "title": "Bed Queen Size",
-          "img": "",
-          "desc": "A comfortable queen-size bed with a modern frame.",
+          "title": "Vintage coffee table",
+          "img": "Vintage_Coffee_Table.jpg",
+          "desc": "A comfortable vintage coffee table.",
           "category": "beds",
-          "price": "399.99"
+          "price": "199.99"
         },
         {
           "id": 7,
-          "title": "Bookshelf Tall",
-          "img": "",
+          "title": "Glass bookshelf",
+          "img": "Glass_Bookshelf.jpg",
           "desc": "A tall bookshelf with plenty of storage space.",
           "category": "shelves",
           "price": "79.99"
         },
         {
           "id": 8,
-          "title": "Dresser White",
-          "img": "",
-          "desc": "A classic white dresser with six drawers.",
+          "title": "Ceramic vase",
+          "img": "Ceramic_Vase.jpg",
+          "desc": "A classic ceramic vase.",
           "category": "dressers",
-          "price": "129.99"
+          "price": "19.99"
         },
-        {
-          "id": 9,
-          "title": "Coffee Table Glass",
-          "img": "",
-          "desc": "A stylish coffee table with a glass top.",
-          "category": "tables",
-          "price": "59.99"
-        }
+
       ]
     }
   }
