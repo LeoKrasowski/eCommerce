@@ -39,6 +39,17 @@ header ul.nav li:hover {
   opacity: 0.5;
 }
 
+header .shop-cart-button {
+  float: right;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button:active {
+  color: #0b8f35;
+}
+
 header .presentation {
     margin: 50px 0;
     background: url('./img/Main_background.png') no-repeat;
