@@ -18,26 +18,21 @@ export class Categores extends Component {
                     name: 'Tables'
                 },
                 {
-                    key: 'sofa',
+                    key: 'sofas',
                     name: 'Sofas'
                 },
                 {
-                    key: 'bookshelf',
-                    name: 'Bookshelf'
+                    key: 'shelves',
+                    name: 'Shelves'
                 },
                 {
-                    key: 'lamp',
+                    key: 'lamps',
                     name: 'Lamps'
                 },
                 {
-                    key: 'art',
+                    key: 'arts',
                     name: 'Arts'
-                },
-                {
-                    key: 'vase',
-                    name: 'Vases'
-                },
-
+                }
             ]
         }
     }

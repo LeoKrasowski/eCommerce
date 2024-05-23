@@ -9,6 +9,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       orders: [],
+      currentItems: [],
       items: [
         {
           id: 1,
@@ -23,7 +24,7 @@ class App extends React.Component {
           title: 'Wall art',
           img: 'Wall_Art.jpg',
           desc: 'Nice wall art.',
-          category: 'chairs',
+          category: 'arts',
           price: '25.99'
         },
         {
@@ -55,7 +56,7 @@ class App extends React.Component {
           "title": "Vintage coffee table",
           "img": "Vintage_Coffee_Table.jpg",
           "desc": "A comfortable vintage coffee table.",
-          "category": "beds",
+          "category": "tables",
           "price": "199.99"
         },
         {
@@ -71,13 +72,13 @@ class App extends React.Component {
           "title": "Ceramic vase",
           "img": "Ceramic_Vase.jpg",
           "desc": "A classic ceramic vase.",
-          "category": "dressers",
+          "category": "arts",
           "price": "19.99"
         },
 
       ]
     }
-
+    this.state.currentItems = this.state.items
     this.addToOrder = this.addToOrder.bind(this)
     this.deleteOrder = this.deleteOrder.bind(this)
     this.chooseCategory = this.chooseCategory.bind(this)
@@ -87,7 +88,7 @@ class App extends React.Component {
       <div className="wrapper">
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
         <Categores chooseCategory={this.chooseCategory} />
-        <Items items={this.state.items} onAdd={this.addToOrder} />
+        <Items items={this.state.currentItems} onAdd={this.addToOrder} />
         <Footer />
       </div>
 
@@ -95,7 +96,15 @@ class App extends React.Component {
   }
 
   chooseCategory(category) {
-    console.log(category)
+    if (category === 'all') {
+      this.setState({ currentItems: this.state.items })
+      return
+    }
+
+
+    this.setState({
+      currentItems: this.state.items.filter(el => el.category === category)
+    })
   }
 
   deleteOrder(id) {
