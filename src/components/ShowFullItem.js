@@ -10,7 +10,7 @@ export class ShowFullItem extends Component {
                     <p>{this.props.item.desc}</p>
                     <b>{this.props.item.price}$</b>
                     <div className='add-to-cart' onClick={() => this.props.onAdd(this.props.item)}>+</div>
-                    <div className='close-window' onClick={() => this.setState({ showFullItem: !this.state.showFullItem })}>close x</div>
+                    <div className='close-window' onClick={() => !this.props.onShowItem(this.props.item)}>close x</div>
                 </div>
             </div>
         )
