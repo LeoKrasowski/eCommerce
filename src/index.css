@@ -199,7 +199,7 @@ header .presentation::before {
 
 .close-window {
   position: relative;
-  top: -750px;
+  top: -730px;
   left: 555px;
   cursor: pointer;
   transition: 500ms ease;
@@ -244,7 +244,7 @@ main b, .full-item b {
 }
 
 main .add-to-cart,
-full-item .add-to-cart {
+.full-item .add-to-cart {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -258,6 +258,7 @@ full-item .add-to-cart {
   cursor: pointer;
   font-weight: 600;
 }
+
 
 main .add-to-cart:hover, 
 .full-item .add-to-cart:hover {
