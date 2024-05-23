@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Items from "./components/Items";
+import Categores from "./components/Categores";
 
 class App extends React.Component {
   constructor(props) {
@@ -84,6 +85,7 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
+        <Categores />
         <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
       </div>
