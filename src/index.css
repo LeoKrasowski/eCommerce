@@ -97,6 +97,20 @@ header .shop-cart .item p {
 
 }
 
+header .shop-cart .item .delete-icon {
+  color: #0b8f35;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+  color:#222;
+  transform: scale(1.1);
+}
+
 header .presentation {
     margin: 50px 0;
     background: url('./img/Main_background.png') no-repeat;
