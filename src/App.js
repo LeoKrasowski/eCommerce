@@ -78,7 +78,8 @@ class App extends React.Component {
         },
 
       ],
-      showFullItem: false
+      showFullItem: false,
+      fullItem: {}
     }
     this.state.currentItems = this.state.items
     this.addToOrder = this.addToOrder.bind(this)
@@ -93,13 +94,14 @@ class App extends React.Component {
         <Categores chooseCategory={this.chooseCategory} />
         <Items onShowItem={this.onShowItem} items={this.state.currentItems} onAdd={this.addToOrder} />
 
-        {this.state.showFullItem && <ShowFullItem />}
+        {this.state.showFullItem && <ShowFullItem item={this.state.fullItem} />}
         <Footer />
       </div>
     )
   }
 
-  onShowItem() {
+  onShowItem(item) {
+    this.setState({ fullItem: item })
     this.setState({ showFullItem: !this.state.showFullItem })
   }
 
