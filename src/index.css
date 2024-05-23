@@ -111,6 +111,14 @@ header .shop-cart .item .delete-icon:hover {
   transform: scale(1.1);
 }
 
+header .shop-cart .summa {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 header .presentation {
     margin: 50px 0;
     background: url('./img/Main_background.png') no-repeat;
